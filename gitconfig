@@ -1,0 +1,13 @@
+[http]
+	sslVerify = false
+[user]
+	name = Satoshi Otsubo
+	email = otsubo@jsk.imi.i.u-tokyo.ac.jp
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	st = status
+	ci = commit
+[core]
+	editor = emacs -nw

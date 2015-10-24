@@ -27,14 +27,17 @@ if [ "$DISPLAY" != "" ]; then
 fi
 
 current_branch () {
- local branch
- branch=$(git branch 2>/dev/null | grep '^\*' | sed 's/^\* //g')
+  git branch 2>/dev/null | grep '^\*' | sed 's/^\* //g'
+}
+
+_ps_branch () {
+ local branch=$(current_branch)
  if [ "$branch" != "" ]; then
   echo "($branch)"
  fi
 }
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(current_branch)\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(_ps_branch)\$ '
 
 
 # history search bindkey

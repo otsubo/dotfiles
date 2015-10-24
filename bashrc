@@ -9,13 +9,20 @@ alias ll='ls -l'
 alias la="ls -la"
 alias lsa="ls -la"
 
+GITHUB_USERNAME=otsubo
+
 alias git=hub
 alias ga='git add'
 alias gd='git diff'
 alias gst='git status'
 alias gc='git commit'
 alias gco='git checkout'
+alias ggpush='git push origin $(current_branch)'
+alias ggpull='git pull origin $(current_branch)'
+alias gmpush='git push $GITHUB_USERNAME $(current_branch)'
+alias gmpull='git pull $GITHUB_USERNAME $(current_branch)'
 
+alias G='grep'
 alias C='xsel --input --clipboard'
 
 alias ..='cd ..'

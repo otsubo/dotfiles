@@ -1,7 +1,7 @@
 export PATH=$HOME/.local/bin:$PATH
 
 google () {
-  gnome-open "http://google.com?q=$@"
+  gnome-open "https://www.google.com/search?q=$@"
 }
 
 alias sl=ls

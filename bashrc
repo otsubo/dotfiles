@@ -11,6 +11,9 @@ alias lsa="ls -la"
 
 GITHUB_USERNAME=otsubo
 
+# pycd
+source $(which pycd.sh)
+
 alias git=hub
 alias ga='git add'
 alias gd='git diff'

@@ -10,3 +10,4 @@ rm hub-linux-amd64-2.2.1.tar.gz
 ln -s $HOME/.dotfiles/bashrc $HOME/.bashrc.otsubo
 ln -s $HOME/.dotfiles/gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/Xmodmap $HOME/.Xmodmap
+ln -s $HOME/.dotfiles/percol.d $HOME/.percol.d

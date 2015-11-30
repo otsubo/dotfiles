@@ -10,6 +10,7 @@ alias la="ls -la"
 alias lsa="ls -la"
 
 GITHUB_USERNAME=otsubo
+EDITOR='emacs -nw'
 
 # pycd
 source $(which pycd.sh)
@@ -17,6 +18,7 @@ source $(which pycd.sh)
 alias git=hub
 alias ga='git add'
 alias gd='git diff'
+alias gdca='git diff --cached'
 alias gst='git status'
 alias gc='git commit'
 alias gco='git checkout'
@@ -24,6 +26,11 @@ alias ggpush='git push origin $(current_branch)'
 alias ggpull='git pull origin $(current_branch)'
 alias gmpush='git push $GITHUB_USERNAME $(current_branch)'
 alias gmpull='git pull $GITHUB_USERNAME $(current_branch)'
+alias gbw='hub browse'
+alias gpr='hub pull-request'
+alias gpl='hub browse -- pulls'
+alias gis='hub browse -- issues'
+alias gcmsg='git commit -m'
 
 alias G='grep'
 alias C='xsel --input --clipboard'

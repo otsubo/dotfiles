@@ -1,4 +1,5 @@
 export PATH=$HOME/.local/bin:$PATH
+export LESS='-R'
 
 google () {
   gnome-open "https://www.google.com/search?q=$@"

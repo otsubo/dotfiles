@@ -2,7 +2,11 @@ export PATH=$HOME/.local/bin:$PATH
 export LESS='-R'
 
 google () {
+<<<<<<< Updated upstream
   gnome-open "https://www.google.com/search?q=$@"
+=======
+  gnome-open "http://google.com?q=$@" &>/dev/null
+>>>>>>> Stashed changes
 }
 
 alias sl=ls
@@ -40,6 +44,8 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+
+
 if [ "$DISPLAY" != "" ]; then
   xmodmap $HOME/.Xmodmap
 fi
@@ -72,3 +78,12 @@ _rostopic_list_percol() {
   READLINE_POINT=${#l}
 }
 bind -x '"\C-o": _rostopic_list_percol'
+
+image_view () {
+  rosrun image_view image_view image:=$1
+}
+
+if which pycd.sh &>/dev/null; then
+  source `which pycd.sh`
+fi
+

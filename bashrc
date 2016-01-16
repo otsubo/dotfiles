@@ -1,13 +1,13 @@
 export PATH=$HOME/.local/bin:$PATH
 export LESS='-R'
 
-google () {
-<<<<<<< Updated upstream
-  gnome-open "https://www.google.com/search?q=$@"
-=======
-  gnome-open "http://google.com?q=$@" &>/dev/null
->>>>>>> Stashed changes
-}
+#google () {
+#<<<<<<< Updated upstream
+#  gnome-open "https://www.google.com/search?q=$@"
+#=======
+#  gnome-open "http://google.com?q=$@" &>/dev/null
+#>>>>>>> Stashed changes
+#}
 
 alias sl=ls
 alias ll='ls -l'
@@ -22,12 +22,16 @@ source $(which pycd.sh)
 
 alias git=hub
 alias ga='git add'
+alias gb='git branch'
+alias grv='git remote -v'
 alias gd='git diff'
 alias gdca='git diff --cached'
 alias gst='git status'
 alias gc='git commit'
+alias gc!='git commit --amend'
 alias gco='git checkout'
 alias ggpush='git push origin $(current_branch)'
+alias ggpush!='git push origin $(current_branch) --force'
 alias ggpull='git pull origin $(current_branch)'
 alias gmpush='git push $GITHUB_USERNAME $(current_branch)'
 alias gmpull='git pull $GITHUB_USERNAME $(current_branch)'
@@ -36,9 +40,11 @@ alias gpr='hub pull-request'
 alias gpl='hub browse -- pulls'
 alias gis='hub browse -- issues'
 alias gcmsg='git commit -m'
+alias roseus='rlwrap roseus'
 
 alias G='grep'
 alias C='xsel --input --clipboard'
+alias lv='less'
 
 alias ..='cd ..'
 alias ...='cd ../..'

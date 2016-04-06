@@ -1,13 +1,9 @@
 export PATH=$HOME/.local/bin:$PATH
 export LESS='-R'
 
-#google () {
-#<<<<<<< Updated upstream
-#  gnome-open "https://www.google.com/search?q=$@"
-#=======
-#  gnome-open "http://google.com?q=$@" &>/dev/null
-#>>>>>>> Stashed changes
-#}
+google () {
+  gnome-open "http://www.google.com?q=$@" &>/dev/null
+}
 
 alias sl=ls
 alias ll='ls -l'
@@ -40,7 +36,9 @@ alias gpr='hub pull-request'
 alias gpl='hub browse -- pulls'
 alias gis='hub browse -- issues'
 alias gcmsg='git commit -m'
-alias roseus='rlwrap roseus'
+if which rlwrap &>/dev/null; then
+  alias roseus='rlwrap roseus'
+fi
 
 alias G='grep'
 alias C='xsel --input --clipboard'

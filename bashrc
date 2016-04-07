@@ -37,7 +37,9 @@ alias gpl='hub browse -- pulls'
 alias gis='hub browse -- issues'
 alias gcmsg='git commit -m'
 if which rlwrap &>/dev/null; then
-  alias roseus='rlwrap roseus'
+  if [ "$EMACS" != "t" ]; then
+    alias roseus='rlwrap roseus'
+  fi
 fi
 
 alias G='grep'

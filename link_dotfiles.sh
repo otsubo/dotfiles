@@ -14,3 +14,4 @@ ln -s $HOME/.dotfiles/gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/Xmodmap $HOME/.Xmodmap
 ln -s $HOME/.dotfiles/percol.d $HOME/.percol.d
 ln -s $HOME/.dotfiles/lessfilter $HOME/.lessfilter
+ln -s $HOME/.dotfiles/xinputrc $HOME/.xinputrc

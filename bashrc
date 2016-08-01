@@ -1,6 +1,10 @@
 export PATH=$HOME/.local/bin:$PATH
 export LESS='-R'
 
+## SVN and SSH
+export SSH_USER=otsubo
+export SVN_SSH="ssh -l ${SSH_USER}"
+
 google () {
   gnome-open "http://www.google.com?q=$@" &>/dev/null
 }

@@ -40,6 +40,9 @@ alias gpr='hub pull-request'
 alias gpl='hub browse -- pulls'
 alias gis='hub browse -- issues'
 alias gcmsg='git commit -m'
+alias gst='git status'
+alias gsta='git stash'
+alias gstp='git stash pop'
 if which rlwrap &>/dev/null; then
   if [ "$EMACS" != "t" ]; then
     alias roseus='rlwrap roseus'

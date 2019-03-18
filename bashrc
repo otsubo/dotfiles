@@ -96,8 +96,13 @@ bind -x '"\C-o": _rostopic_list_percol'
 image_view () {
   rosrun image_view image_view image:=$1
 }
+alias rqt_reconfigure='rosrun rqt_reconfigure rqt_reconfigure'
 
 if which pycd.sh &>/dev/null; then
   source `which pycd.sh`
 fi
 
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
+export CUDA_HOME=/usr/local/cuda
+export PATH=$PATH:${CUDA_HOME}/bin
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}

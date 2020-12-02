@@ -58,6 +58,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+alias otsubo="cat ${HOME}/.dotfiles/ascii_art/otsubo"
 
 
 if [ "$DISPLAY" != "" ]; then

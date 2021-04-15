@@ -18,7 +18,7 @@ GITHUB_USERNAME=otsubo
 EDITOR='emacs -nw'
 
 # pycd
-source $(which pycd.sh)
+#source $(which pycd.sh)
 
 alias git=hub
 alias ga='git add'
@@ -60,9 +60,9 @@ alias ....='cd ../../..'
 
 
 
-if [ "$DISPLAY" != "" ]; then
-  xmodmap $HOME/.Xmodmap
-fi
+#if [ "$DISPLAY" != "" ]; then
+#  xmodmap $HOME/.Xmodmap
+#fi
 
 current_branch () {
   git branch 2>/dev/null | grep '^\*' | sed 's/^\* //g'
@@ -98,9 +98,9 @@ image_view () {
 }
 alias rqt_reconfigure='rosrun rqt_reconfigure rqt_reconfigure'
 
-if which pycd.sh &>/dev/null; then
-  source `which pycd.sh`
-fi
+#if which pycd.sh &>/dev/null; then
+#  source `which pycd.sh`
+#fi
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 export CUDA_HOME=/usr/local/cuda

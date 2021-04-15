@@ -338,3 +338,5 @@ This function also returns nil meaning don't specify the indentation."
 
 ;;; スクロールバーを右側に表示する
 (set-scroll-bar-mode 'right)
+;;; backup
+(setq backup-directory-alist '((".*" . "~/.ehist")))
